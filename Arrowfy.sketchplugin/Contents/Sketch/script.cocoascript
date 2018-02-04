@@ -81,9 +81,10 @@ function addArrowhead(layer, endType) {
     //0 - triangle as arrowhead
     //TBD: different shapes
     var headPath = NSBezierPath.bezierPath();
-    headPath.moveToPoint(NSMakePoint(0,7));
-    headPath.lineToPoint(NSMakePoint(-14,0));
-    headPath.lineToPoint(NSMakePoint(0,-7));
+    headPath.moveToPoint(NSMakePoint(0,0));
+    headPath.lineToPoint(NSMakePoint(1,4.5));
+    headPath.lineToPoint(NSMakePoint(-13,0));
+    headPath.lineToPoint(NSMakePoint(1,-4.5));
     headPath.closePath();    
     var headShape = MSShapeGroup.shapeWithBezierPath(headPath);
 
